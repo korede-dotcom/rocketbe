@@ -68,4 +68,4 @@ console.log("🚀 ~ file: index.js:55 ~ app.post ~ req:", req.headers)
     });
 })
 
-app.listen(4000,()=> console.log("server running"))
+app.listen(process.env.port,()=> console.log("server running on",process.env.port ))
