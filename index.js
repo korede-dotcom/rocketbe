@@ -97,8 +97,8 @@ app.post("/createbeneficiary",async (req,res) => {
       var config = {
           // https://apidoc.transferrocket.co.uk//processwebpayoutclientrequest'
         method: 'post',
-      maxBodyLength: Infinity,
-        url: 'https://apidoc.transferrocket.co.uk/creatpayoutbeneficiary.io',
+      // maxBodyLength: Infinity,
+        url: process.env.url2,
         headers: { 
           // 'clientId': req.headers.clientid,
           // Authorization:`Basic ${req.headers.authorization.split(' ')[1]}`
