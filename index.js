@@ -101,7 +101,8 @@ app.post("/createbeneficiary",async (req,res) => {
         url: 'https://apidoc.transferrocket.co.uk/creatpayoutbeneficiary.io',
         headers: { 
           // 'clientId': req.headers.clientid,
-          Authorization:`Basic ${req.headers.authorization.split(' ')[1]}`
+          // Authorization:`Basic ${req.headers.authorization.split(' ')[1]}`
+          Authorization:`Basic ${req.query.auth}`
         },
         data : req.body
       };
